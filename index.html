@@ -72,6 +72,21 @@
         font-size: 60px;
         padding: 0.1em;
       }
+
+      .image-container {
+        position: relative;
+        padding-bottom: 100%;
+        overflow: hidden;
+        width: 100%;
+      }
+      .image-container img {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+      }
+
       @media screen and (min-width: 320px) and (max-width: 767px) {
         .header-sub-title {
           font-size: 35px;
@@ -120,7 +135,11 @@
             <!-- <li><a href="#" data-target="#subscribe" class="load-layer-btn">Subscribe</a></li> -->
             <li><a href="#" data-target="#portfolio" class="load-layer-btn">Portfolio</a></li>
             <li><a href="#" data-target="#contact" class="load-layer-btn">Contact</a></li>
-            <li><a href="https://www.youtube.com/channel/UCecWJxrJIJzdjhIln__akLQ"><button class="youtube-btn">Youtube</button></a></li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCecWJxrJIJzdjhIln__akLQ" target="_blank"
+                ><button class="youtube-btn">Videos</button></a
+              >
+            </li>
           </ul>
         </div>
         <!--/.nav-collapse -->
@@ -207,7 +226,7 @@
                                   <div class="line-left"></div>
                                 </div>
                               </div>
-                        
+
                               <p>
                                 We are a Team of Creative Artists and Designers with extensive
                                 experience in Branding, Creating Logos, Corporate Identities,
@@ -307,7 +326,7 @@
                                   <div class="line-left"></div>
                                 </div>
                               </div>
-                 
+
                               <div class="row">
                                 <div class="col-md-12">
                                   <div class="icon-box">
@@ -380,7 +399,7 @@
                       
                     </div> -->
                     <video width="100%" loop autoplay muted>
-                      <source src="./videos/CLIENT.mp4" type="video/mp4" />
+                      <source src="./videos/Services.mp4" type="video/mp4" />
                     </video>
                   </div>
                 </div>
@@ -493,7 +512,7 @@
                           <a href="#" class="button-border-color active" data-filter="*">All</a>
                         </li>
                         <li>
-                          <a href="#" class="button-border-color" data-filter=".brand">Branding</a>
+                          <a href="#" class="button-border-color" data-filter=".client">Clients</a>
                         </li>
                         <li>
                           <a href="#" class="button-border-color" data-filter=".logo">Logos</a>
@@ -508,9 +527,9 @@
                             >Packaging</a
                           >
                         </li>
-                        <li>
+                        <!-- <li>
                           <a href="#" class="button-border-color" data-filter=".poster">Posters</a>
-                        </li>
+                        </li> -->
                       </ul>
                     </nav>
                   </div>
@@ -519,11 +538,12 @@
               <div class="container-fluid">
                 <!-- Portfolio Items -->
                 <div class="portfolio-container isotope-container row mfp-gallery">
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 brand nopadding">
-                    <a href="images/branding/back.jpg">
+                  <!-- <article class="portfolio-item isotope-item col-md-3 col-sm-6 client nopadding"> -->
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 client">
+                    <a href="images/Clients/01-Sanofi.jpg">
                       <div class="project-container">
                         <div class="image-container">
-                          <img src="images/branding/back.jpg" alt="" class="img-responsive" />
+                          <img src="images/Clients/01-Sanofi.jpg" alt="" class="img-responsive" />
                         </div>
                         <div class="project-details">
                           <div class="details-container">
@@ -538,11 +558,11 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 brand nopadding">
-                    <a href="images/branding/english.jpg">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 client">
+                    <a href="images/Clients/02-Pinar.jpg">
                       <div class="project-container">
                         <div class="image-container">
-                          <img src="images/branding/english.jpg" alt="" class="img-responsive" />
+                          <img src="images/Clients/02-Pinar.jpg" alt="" class="img-responsive" />
                         </div>
                         <div class="project-details">
                           <div class="details-container">
@@ -557,12 +577,12 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 brand nopadding">
-                    <a href="images/branding/on machine2.jpg">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 client">
+                    <a href="images/Clients/03-Crispy fry.jpg">
                       <div class="project-container">
                         <div class="image-container">
                           <img
-                            src="images/branding/on machine2.jpg"
+                            src="images/Clients/03-Crispy fry.jpg"
                             alt=""
                             class="img-responsive"
                           />
@@ -580,12 +600,126 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 brand nopadding">
-                    <a href="images/branding/on machine5.jpg">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 client">
+                    <a href="images/Clients/04-Shan.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/Clients/04-Shan.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Branding</h5>
+                              <p class="details-category">Web / Live</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 client">
+                    <a href="images/Clients/05-Hope.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/Clients/05-Hope.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Branding</h5>
+                              <p class="details-category">Web / Live</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 client">
+                    <a href="images/Clients/06-Masako.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/Clients/06-Masako.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Branding</h5>
+                              <p class="details-category">Web / Live</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 client">
+                    <a href="images/Clients/07-Caprisun.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/Clients/07-Caprisun.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Branding</h5>
+                              <p class="details-category">Web / Live</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 client">
+                    <a href="images/Clients/08-Mamee.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/Clients/08-Mamee.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Branding</h5>
+                              <p class="details-category">Web / Live</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 client">
+                    <a href="images/Clients/09-Maa.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/Clients/09-Maa.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Branding</h5>
+                              <p class="details-category">Web / Live</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 client">
+                    <a href="images/Clients/010-Indofood.jpg">
                       <div class="project-container">
                         <div class="image-container">
                           <img
-                            src="images/branding/on machine5.jpg"
+                            src="images/Clients/010-Indofood.jpg"
                             alt=""
                             class="img-responsive"
                           />
@@ -603,11 +737,49 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 brand nopadding">
-                    <a href="images/branding/on-mag.jpg">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 client">
+                    <a href="images/Clients/10-Toya.jpg">
                       <div class="project-container">
                         <div class="image-container">
-                          <img src="images/branding/on-mag.jpg" alt="" class="img-responsive" />
+                          <img src="images/Clients/10-Toya.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Branding</h5>
+                              <p class="details-category">Web / Live</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 client">
+                    <a href="images/Clients/11-Steviana.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/Clients/11-Steviana.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Branding</h5>
+                              <p class="details-category">Web / Live</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 client">
+                    <a href="images/Clients/12-Santan.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/Clients/12-Santan.jpg" alt="" class="img-responsive" />
                         </div>
                         <div class="project-details">
                           <div class="details-container">
@@ -624,11 +796,11 @@
 
                   <!-- **********Logos************ -->
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 logo nopadding">
-                    <a href="images/logos/14 copy.jpg">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 logo">
+                    <a href="images/logos/001.jpg">
                       <div class="project-container">
                         <div class="image-container">
-                          <img src="images/logos/14 copy.jpg" alt="" class="img-responsive" />
+                          <img src="images/logos/001.jpg" alt="" class="img-responsive" />
                         </div>
                         <div class="project-details">
                           <div class="details-container">
@@ -643,11 +815,11 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 logo nopadding">
-                    <a href="images/logos/15 copy.jpg">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 logo">
+                    <a href="images/logos/002.jpg">
                       <div class="project-container">
                         <div class="image-container">
-                          <img src="images/logos/15 copy.jpg" alt="" class="img-responsive" />
+                          <img src="images/logos/002.jpg" alt="" class="img-responsive" />
                         </div>
                         <div class="project-details">
                           <div class="details-container">
@@ -662,11 +834,11 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 logo nopadding">
-                    <a href="images/logos/16 copy.jpg">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 logo">
+                    <a href="images/logos/003.jpg">
                       <div class="project-container">
                         <div class="image-container">
-                          <img src="images/logos/16 copy.jpg" alt="" class="img-responsive" />
+                          <img src="images/logos/003.jpg" alt="" class="img-responsive" />
                         </div>
                         <div class="project-details">
                           <div class="details-container">
@@ -681,11 +853,11 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 logo nopadding">
-                    <a href="images/logos/17 copy.jpg">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 logo">
+                    <a href="images/logos/004.jpg">
                       <div class="project-container">
                         <div class="image-container">
-                          <img src="images/logos/17 copy.jpg" alt="" class="img-responsive" />
+                          <img src="images/logos/004.jpg" alt="" class="img-responsive" />
                         </div>
                         <div class="project-details">
                           <div class="details-container">
@@ -700,11 +872,11 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 logo nopadding">
-                    <a href="images/logos/18 copy.jpg">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 logo">
+                    <a href="images/logos/005.jpg">
                       <div class="project-container">
                         <div class="image-container">
-                          <img src="images/logos/18 copy.jpg" alt="" class="img-responsive" />
+                          <img src="images/logos/005.jpg" alt="" class="img-responsive" />
                         </div>
                         <div class="project-details">
                           <div class="details-container">
@@ -719,11 +891,11 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 logo nopadding">
-                    <a href="images/logos/19 copy.jpg">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 logo">
+                    <a href="images/logos/006.jpg">
                       <div class="project-container">
                         <div class="image-container">
-                          <img src="images/logos/19 copy.jpg" alt="" class="img-responsive" />
+                          <img src="images/logos/006.jpg" alt="" class="img-responsive" />
                         </div>
                         <div class="project-details">
                           <div class="details-container">
@@ -738,11 +910,11 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 logo nopadding">
-                    <a href="images/logos/20 copy.jpg">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 logo">
+                    <a href="images/logos/007.jpg">
                       <div class="project-container">
                         <div class="image-container">
-                          <img src="images/logos/20 copy.jpg" alt="" class="img-responsive" />
+                          <img src="images/logos/007.jpg" alt="" class="img-responsive" />
                         </div>
                         <div class="project-details">
                           <div class="details-container">
@@ -757,11 +929,11 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 logo nopadding">
-                    <a href="images/logos/21 copy.jpg">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 logo">
+                    <a href="images/logos/008.jpg">
                       <div class="project-container">
                         <div class="image-container">
-                          <img src="images/logos/21 copy.jpg" alt="" class="img-responsive" />
+                          <img src="images/logos/008.jpg" alt="" class="img-responsive" />
                         </div>
                         <div class="project-details">
                           <div class="details-container">
@@ -780,11 +952,11 @@
 
                   <!-- ************Creatives********** -->
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative nopadding">
-                    <a href="images/creatives/ceiling.jpg">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative">
+                    <a href="images/creatives/001.jpg">
                       <div class="project-container">
                         <div class="image-container">
-                          <img src="images/creatives/ceiling.jpg" alt="" class="img-responsive" />
+                          <img src="images/creatives/001.jpg" alt="" class="img-responsive" />
                         </div>
                         <div class="project-details">
                           <div class="details-container">
@@ -799,11 +971,11 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative nopadding">
-                    <a href="images/creatives/drive1.jpg">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative">
+                    <a href="images/creatives/002.jpg">
                       <div class="project-container">
                         <div class="image-container">
-                          <img src="images/creatives/drive1.jpg" alt="" class="img-responsive" />
+                          <img src="images/creatives/002.jpg" alt="" class="img-responsive" />
                         </div>
                         <div class="project-details">
                           <div class="details-container">
@@ -818,11 +990,11 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative nopadding">
-                    <a href="images/creatives/Heart.jpg">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative">
+                    <a href="images/creatives/003.jpg">
                       <div class="project-container">
                         <div class="image-container">
-                          <img src="images/creatives/Heart.jpg" alt="" class="img-responsive" />
+                          <img src="images/creatives/003.jpg" alt="" class="img-responsive" />
                         </div>
                         <div class="project-details">
                           <div class="details-container">
@@ -837,11 +1009,11 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative nopadding">
-                    <a href="images/creatives/lungs.jpg">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative">
+                    <a href="images/creatives/004.jpg">
                       <div class="project-container">
                         <div class="image-container">
-                          <img src="images/creatives/lungs.jpg" alt="" class="img-responsive" />
+                          <img src="images/creatives/004.jpg" alt="" class="img-responsive" />
                         </div>
                         <div class="project-details">
                           <div class="details-container">
@@ -856,11 +1028,220 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative nopadding">
-                    <a href="images/creatives/smoking.jpg">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative">
+                    <a href="images/creatives/005.jpg">
                       <div class="project-container">
                         <div class="image-container">
-                          <img src="images/creatives/smoking.jpg" alt="" class="img-responsive" />
+                          <img src="images/creatives/005.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Creatives</h5>
+                              <p class="details-category">Web / Life</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative">
+                    <a href="images/creatives/006.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/creatives/006.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Creatives</h5>
+                              <p class="details-category">Web / Life</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative">
+                    <a href="images/creatives/007.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/creatives/007.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Creatives</h5>
+                              <p class="details-category">Web / Life</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative">
+                    <a href="images/creatives/008.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/creatives/008.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Creatives</h5>
+                              <p class="details-category">Web / Life</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative">
+                    <a href="images/creatives/009.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/creatives/009.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Creatives</h5>
+                              <p class="details-category">Web / Life</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative">
+                    <a href="images/creatives/010.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/creatives/010.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Creatives</h5>
+                              <p class="details-category">Web / Life</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative">
+                    <a href="images/creatives/011.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/creatives/011.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Creatives</h5>
+                              <p class="details-category">Web / Life</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative">
+                    <a href="images/creatives/012.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/creatives/012.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Creatives</h5>
+                              <p class="details-category">Web / Life</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative">
+                    <a href="images/creatives/013.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/creatives/013.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Creatives</h5>
+                              <p class="details-category">Web / Life</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative">
+                    <a href="images/creatives/014.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/creatives/014.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Creatives</h5>
+                              <p class="details-category">Web / Life</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative">
+                    <a href="images/creatives/015.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/creatives/015.jpg" alt="" class="img-responsive" />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Creatives</h5>
+                              <p class="details-category">Web / Life</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 creative">
+                    <a href="images/creatives/016.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img src="images/creatives/016.jpg" alt="" class="img-responsive" />
                         </div>
                         <div class="project-details">
                           <div class="details-container">
@@ -877,14 +1258,12 @@
 
                   <!-- **********Packaging*********** -->
 
-                  <article
-                    class="portfolio-item isotope-item col-md-3 col-sm-6 packaging nopadding"
-                  >
-                    <a href="images/packaging/on-cheese60.png">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 packaging">
+                    <a href="images/packaging/01-indotuna.png">
                       <div class="project-container">
                         <div class="image-container">
                           <img
-                            src="images/packaging/on-cheese60.png"
+                            src="images/packaging/01-indotuna.png"
                             alt=""
                             class="img-responsive"
                           />
@@ -902,14 +1281,12 @@
                     </a>
                   </article>
 
-                  <article
-                    class="portfolio-item isotope-item col-md-3 col-sm-6 packaging nopadding"
-                  >
-                    <a href="images/packaging/on-ketchup60.png">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 packaging">
+                    <a href="images/packaging/02-hiba-tuna.jpg">
                       <div class="project-container">
                         <div class="image-container">
                           <img
-                            src="images/packaging/on-ketchup60.png"
+                            src="images/packaging/02-hiba-tuna.jpg"
                             alt=""
                             class="img-responsive"
                           />
@@ -927,14 +1304,12 @@
                     </a>
                   </article>
 
-                  <article
-                    class="portfolio-item isotope-item col-md-3 col-sm-6 packaging nopadding"
-                  >
-                    <a href="images/packaging/on-onion60.png">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 packaging">
+                    <a href="images/packaging/03-al-riyan tuna.jpg">
                       <div class="project-container">
                         <div class="image-container">
                           <img
-                            src="images/packaging/on-onion60.png"
+                            src="images/packaging/03-al-riyan tuna.jpg"
                             alt=""
                             class="img-responsive"
                           />
@@ -952,14 +1327,196 @@
                     </a>
                   </article>
 
-                  <article
-                    class="portfolio-item isotope-item col-md-3 col-sm-6 packaging nopadding"
-                  >
-                    <a href="images/packaging/on-spicy60.png">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 packaging">
+                    <a href="images/packaging/04-an-nur tuna.jpg">
                       <div class="project-container">
                         <div class="image-container">
                           <img
-                            src="images/packaging/on-spicy60.png"
+                            src="images/packaging/04-an-nur tuna.jpg"
+                            alt=""
+                            class="img-responsive"
+                          />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Packaging</h5>
+                              <p class="details-category">Brand / Art</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 packaging">
+                    <a href="images/packaging/05-Hope tetrapacks.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img
+                            src="images/packaging/05-Hope tetrapacks.jpg"
+                            alt=""
+                            class="img-responsive"
+                          />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Packaging</h5>
+                              <p class="details-category">Brand / Art</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 packaging">
+                    <a href="images/packaging/06-Wellbee.png">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img
+                            src="images/packaging/06-Wellbee.png"
+                            alt=""
+                            class="img-responsive"
+                          />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Packaging</h5>
+                              <p class="details-category">Brand / Art</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 packaging">
+                    <a href="images/packaging/07-banana chips.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img
+                            src="images/packaging/07-banana chips.jpg"
+                            alt=""
+                            class="img-responsive"
+                          />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Packaging</h5>
+                              <p class="details-category">Brand / Art</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 packaging">
+                    <a href="images/packaging/08-Rusk Box2.jpg">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img
+                            src="images/packaging/08-Rusk Box2.jpg"
+                            alt=""
+                            class="img-responsive"
+                          />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Packaging</h5>
+                              <p class="details-category">Brand / Art</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 packaging">
+                    <a href="images/packaging/09-cheese60.png">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img
+                            src="images/packaging/09-cheese60.png"
+                            alt=""
+                            class="img-responsive"
+                          />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Packaging</h5>
+                              <p class="details-category">Brand / Art</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 packaging">
+                    <a href="images/packaging/010-ketchup60.png">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img
+                            src="images/packaging/010-ketchup60.png"
+                            alt=""
+                            class="img-responsive"
+                          />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Packaging</h5>
+                              <p class="details-category">Brand / Art</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 packaging">
+                    <a href="images/packaging/011-onion60.png">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img
+                            src="images/packaging/011-onion60.png"
+                            alt=""
+                            class="img-responsive"
+                          />
+                        </div>
+                        <div class="project-details">
+                          <div class="details-container">
+                            <div class="details-text">
+                              <h5 class="details-title">Packaging</h5>
+                              <p class="details-category">Brand / Art</p>
+                            </div>
+                          </div>
+                          <div class="overlay background-dark-5 opacity-70"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 packaging">
+                    <a href="images/packaging/012-spicy60.png">
+                      <div class="project-container">
+                        <div class="image-container">
+                          <img
+                            src="images/packaging/012-spicy60.png"
                             alt=""
                             class="img-responsive"
                           />
@@ -979,26 +1536,7 @@
 
                   <!-- *********Posters******** -->
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster nopadding">
-                    <a href="images/packaging/wellbee.jpg">
-                      <div class="project-container">
-                        <div class="image-container">
-                          <img src="images/packaging/wellbee.jpg" alt="" class="img-responsive" />
-                        </div>
-                        <div class="project-details">
-                          <div class="details-container">
-                            <div class="details-text">
-                              <h5 class="details-title">Mobile Optimized</h5>
-                              <p class="details-category">Web / Life</p>
-                            </div>
-                          </div>
-                          <div class="overlay background-dark-5 opacity-70"></div>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster nopadding">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster">
                     <a href="images/posters/1-MV.jpg">
                       <div class="project-container">
                         <div class="image-container">
@@ -1017,7 +1555,7 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster nopadding">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster">
                     <a href="images/posters/22 copy.jpg">
                       <div class="project-container">
                         <div class="image-container">
@@ -1036,7 +1574,7 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster nopadding">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster">
                     <a href="images/posters/23 copy.jpg">
                       <div class="project-container">
                         <div class="image-container">
@@ -1055,7 +1593,7 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster nopadding">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster">
                     <a href="images/posters/24 copy.jpg">
                       <div class="project-container">
                         <div class="image-container">
@@ -1074,7 +1612,7 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster nopadding">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster">
                     <a href="images/posters/25 copy.jpg">
                       <div class="project-container">
                         <div class="image-container">
@@ -1093,7 +1631,7 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster nopadding">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster">
                     <a href="images/posters/26 copy.jpg">
                       <div class="project-container">
                         <div class="image-container">
@@ -1112,7 +1650,7 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster nopadding">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster">
                     <a href="images/posters/036.jpg">
                       <div class="project-container">
                         <div class="image-container">
@@ -1131,7 +1669,7 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster nopadding">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster">
                     <a href="images/posters/037.jpg">
                       <div class="project-container">
                         <div class="image-container">
@@ -1150,7 +1688,7 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster nopadding">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster">
                     <a href="images/posters/038.jpg">
                       <div class="project-container">
                         <div class="image-container">
@@ -1169,7 +1707,7 @@
                     </a>
                   </article>
 
-                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster nopadding">
+                  <article class="portfolio-item isotope-item col-md-3 col-sm-6 poster">
                     <a href="images/posters/mv-snacks.jpg">
                       <div class="project-container">
                         <div class="image-container">
@@ -1396,7 +1934,7 @@
 
     <!-- JS -->
     <script>
-      const words = ['dynamic', 'amazing', 'powerfull'];
+      const words = ['creative', 'different', 'thinkers', 'disruptors', 'powerful', 'dynamic'];
       let i = 0;
       let timer;
 
